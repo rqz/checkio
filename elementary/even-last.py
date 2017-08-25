@@ -1,8 +1,8 @@
 def checkio(array):
-    for i in array:
-        if i%2==0:
-            sum+=i
-    return 0
+    if array:
+        return sum(array[::2])*array[-1]
+    else:
+        return 0
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':

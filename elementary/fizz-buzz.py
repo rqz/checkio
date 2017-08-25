@@ -1,17 +1,14 @@
 #Your optional code here
 #You can import some modules or create additional functions
 
-
 def checkio(number):
-    #Your code here
-    #It's main function. Don't remove this function
-    #It's using for auto-testing and must return a result for check.
-
-    #replace this for solution
+    if number%15==0:
+        return "Fizz Buzz"
+    if number%5==0:
+        return "Buzz"
+    if number%3==0:
+        return "Fizz"
     return str(number)
-
-#Some hints:
-#Convert a number in the string with str(n)
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
